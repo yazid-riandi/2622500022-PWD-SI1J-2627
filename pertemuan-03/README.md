@@ -33,4 +33,4 @@
 
 ## GitHub Pages
 
-URL: [tempel URL GitHub Pages Pertemuan 3]
+URL: https://yazid-riandi.github.io/2622500022-PWD-SI1J-2627/pertemuan-03/
