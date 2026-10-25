@@ -52,7 +52,7 @@ const PROFIL_GITHUB = "satpamal";
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
-            <p>Halo, saya Yazid Riandi. Saya sedang mempelajari Pemrograman Web Dasar.</p>
+            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php echo NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
 
             <img src="img/foto-profil.jpg" width="200" height="250" alt="Foto Profil Nama Mahasiswa">
         </section>
