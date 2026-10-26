@@ -6,7 +6,7 @@ $namaMahasiswa = "Yazid Riandi";
 $programStudi = "SI";
 $tahunAkademik = "2026/2027";
 $semester = 1;
-$ipk = 3.75;
+$ipk = "4.00";
 $statusAktif = true;
 $catatanTambahan = null;
 
@@ -52,7 +52,7 @@ const PROFIL_GITHUB = "yazid-riandi";
     <main>
         <section id="home">
             <h2>Selamat Datang</h2>
-            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php echo NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
+            <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p>
 
             <img src="img/foto-profil.jpg" width="200" height="250" alt="Foto Profil Nama Mahasiswa">
         </section>
