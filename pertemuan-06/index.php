@@ -146,7 +146,7 @@ const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
 
             <p> Kunjungi <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">Profil GitHub Saya</a></p>
 
-            <form id="contactForm" action="index.html" method="get" novalidate>
+            <form id="contactForm" action="index.php" method="get" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br>
 
