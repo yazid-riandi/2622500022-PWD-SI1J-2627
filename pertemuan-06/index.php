@@ -11,7 +11,7 @@ $statusAktif = true;
 $catatanTambahan = null;
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "yazid-riandi";
+const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
 ?>
 
 <!DOCTYPE html>
@@ -75,7 +75,7 @@ const PROFIL_GITHUB = "yazid-riandi";
         <section id="contact">
             <h2>Kontak</h2>
 
-            <p> Kunjungi <a href="https://github.com/yazid-riandi/2622500022-PWD-SI1J-2627">Profil GitHub Saya</a></p>
+            <p> Kunjungi <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">Profil GitHub Saya</a></p>
 
             <form id="contactForm" action="index.html" method="get" novalidate>
                 <div class="form-group">
