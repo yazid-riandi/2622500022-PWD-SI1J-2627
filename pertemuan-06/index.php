@@ -24,6 +24,17 @@ $keteranganSemester = "Semester akhir";
 }
 $namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik 
 Informatika" : "Lainnya");
+// Bagian 4: Percabangan switch-case-default
+switch ($programStudi) {
+    case "SI":
+      $fokusProgramStudi = "Sistem informasi dan proses bisnis";
+      break;
+    case "TI":
+      $fokusProgramStudi = "Komputasi dan pengembangan perangkat lunak";
+      break;
+    default:
+      $fokusProgramStudi = "Belum ditentukan";
+}
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
@@ -81,6 +92,7 @@ const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
                 <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
                 <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+                <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
 
                 <h3>Target Belajar</h3>
