@@ -22,6 +22,8 @@ $keteranganSemester = "Semester menengah";
 } else {
 $keteranganSemester = "Semester akhir";
 }
+$namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik 
+Informatika" : "Lainnya");
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
 const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
@@ -77,6 +79,8 @@ const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
                 <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
                 <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
                 <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+                <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
+                <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
                 <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
 
                 <h3>Target Belajar</h3>
