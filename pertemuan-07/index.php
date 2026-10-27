@@ -1,7 +1,7 @@
 <?php
 // P7: penggunaan GET
 if (isset($_GET['nama'])) {
-    $nama = $_GET ['nama'];
+    $nama = $_GET['nama'];
     echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
 }
 // P6: PHP dasar dan pemrograman sisi peladen
@@ -151,7 +151,7 @@ const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
 
             <p> Kunjungi <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">Profil GitHub Saya</a></p>
 
-            <form id="contactForm" action="index.php" method="get" novalidate>
+            <form id="contactForm" action="index.php" method="post" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br>
 

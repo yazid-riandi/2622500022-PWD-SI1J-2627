@@ -11,19 +11,19 @@ navToggle.addEventListener("click", () => {
     } else {
       navToggle.setAttribute("aria-label", "Buka navigasi");
     }
-});
+ });
 
-const contactForm = document.getElementById("contactForm");
-const formFeedback = document.getElementById("formFeedback");
+ const contactForm = document.getElementById("contactForm");
+ const formFeedback = document.getElementById("formFeedback");
 
-const namaInput = document.getElementById("nama");
-const emailInput = document.getElementById("email");
-const semesterInput = document.getElementById("semester");
-const tanggalInput = document.getElementById("tanggal");
-const prodiInput = document.getElementById("prodi");
-const pesanInput = document.getElementById("pesan");
+ const namaInput = document.getElementById("nama");
+ const emailInput = document.getElementById("email");
+ const semesterInput = document.getElementById("semester");
+ const tanggalInput = document.getElementById("tanggal");
+ const prodiInput = document.getElementById("prodi");
+ const pesanInput = document.getElementById("pesan");
 
-contactForm.addEventListener("submit", (event) => {
+ contactForm.addEventListener("submit", (event) => {
  event.preventDefault();
  formFeedback.className = "form-feedback-error";
 
@@ -86,13 +86,14 @@ contactForm.addEventListener("submit", (event) => {
 
  formFeedback.textContent = "Form berhasil divalidasi.";
  formFeedback.className = "form-feedback-success";
-});
+ contactForm.submit();
+ });
 
-contactForm.addEventListener("reset", () => {
+ contactForm.addEventListener("reset", () => {
  formFeedback.textContent = "";
-});
+ });
 
 contactForm.addEventListener("input", () => {
  formFeedback.textContent = "";
-});
+ });
 
