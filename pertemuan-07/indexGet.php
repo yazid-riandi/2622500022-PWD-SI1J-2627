@@ -1,7 +1,7 @@
 <?php
 // P7: penggunaan GET
 if (isset($_GET['nama'])) {
-    $nama = $_GET ['nama'];
+    $nama = $_GET['nama'];
     echo "Nama yang diterima: " . htmlspecialchars($nama, ENT_QUOTES, 'UTF-8');
 }
 // P6: PHP dasar dan pemrograman sisi peladen
@@ -10,15 +10,20 @@ $nim = "2622500022";
 $namaMahasiswa = "Yazid Riandi";
 $programStudi = "SI";
 $tahunAkademik = "2026/2027";
-$semester = 2;
+$semester = 1;
 $ipk = "3.75";
 $statusAktif = true;
 $catatanTambahan = null;
+
+const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
+const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
+
 // Bagian 2: Operator
 $batasSemester = 8;
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = $semester >= 1 && $semester <= $batasSemester;
 $statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
+
 // Bagian 3: Percabangan if-elseif-else
 if ($semester < 3) {
 $keteranganSemester = "Semester awal";
@@ -27,8 +32,10 @@ $keteranganSemester = "Semester menengah";
 } else {
 $keteranganSemester = "Semester akhir";
 }
+
 $namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik 
 Informatika" : "Lainnya");
+
 // Bagian 4: Percabangan switch-case-default
 switch ($programStudi) {
     case "SI":
@@ -40,9 +47,6 @@ switch ($programStudi) {
     default:
       $fokusProgramStudi = "Belum ditentukan";
 }
-
-const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
 ?>
 
 <!DOCTYPE html>
@@ -65,8 +69,7 @@ const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
             type="button"
             aria-label="Buka navigasi"
             aria-controls="navMenu"
-            aria-expanded="fal"
-         >
+            aria-expanded="false">
             &#9776;
         </button>
     </div>
@@ -90,17 +93,17 @@ const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
 
         <section id="about">
             <h2>Tentang Saya</h2>
+
             <article>
                 <h3>Profil Singkat</h3>
                 <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
                 <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
-                <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
-                <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
-                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
                 <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+                <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+                <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
+                <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
                 <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
                 <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; ?></p>
-                <p>Saya mahasiswa Program Studi Sistem Informasi.</p>
 
                 <h3>Target Belajar</h3>
                 <ol>
@@ -129,10 +132,7 @@ const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
                         }
                         ?>
                     </ol>
-                    <li>Memahami struktur HTML5.</li>
-                    <li>Menyusun halaman web semantik.</li>
-                    <li>Memvalidasi dokumen HTML.</li>
-                </ol>
+
                 <h3>Semester (Perulangan while):</h3>
                 <ol>
                     <?php
@@ -151,7 +151,7 @@ const PROFIL_GITHUB = "yazid-riandi/2622500022-PWD-SI1J-2627";
 
             <p> Kunjungi <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">Profil GitHub Saya</a></p>
 
-            <form id="contactForm" action="index.php" method="get" novalidate>
+            <form id="contactForm" action="indexGet.php" method="get" novalidate>
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label><br>
 
