@@ -100,5 +100,4 @@ navToggle.addEventListener("click", () => {
 
 contactForm.addEventListener("input", () => {
  formFeedback.textContent = "";
- });
-
+ })
