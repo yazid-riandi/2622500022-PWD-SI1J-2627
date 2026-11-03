@@ -8,20 +8,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- front page title -->
-    <div class="front-page-title">
+    <!-- First page -->
+    <div class="first-page-title">
         <h1>UTS PWD GASAL 2026/2027</h1>
         <p>Silahkan klik lanjut di bawah ini</p>
         <a href="#next">Lanjut</a>
     </div>
     
-    <!-- navbar -->
-     <div class="navbar">
-        <div class="container">
+    <!-- Second page -->
+     <div class="background">
+        <div class="first-title">Beranda</div>
             <div class="navbar-box">
-                <div class="logo">
-                    <h1>MENU</h1>
-                    <ul class="menu">
+                    <ul class="navigasi">
                     <li>
                         <a href="#home">Beranda</a></li>
                     <li>

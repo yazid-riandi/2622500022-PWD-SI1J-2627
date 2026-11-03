@@ -6,9 +6,9 @@
     font-family: Arial, Helvetica, sans-serif
 }
 
-/* front-page-title */
-.front-page-title {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.836)), url(img/FotoIsb.jpg);
+/* first page */
+.first-page-title {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.884), rgba(0, 0, 0, 0.884)), url(img/FotoIsb.jpg);
     width: 100%;
     min-height: 100vh;
     background-position: center;
@@ -20,17 +20,17 @@
     padding-bottom: 150px;
 }
 
-.front-page-title h1 {
+.first-page-title h1 {
     font-size: 50px;
     margin-bottom: 15px;
     line-height: 1.3;
 }
 
-.front-page-title p {
+.first-page-title p {
     margin-bottom: 30px;
 }
 
-.front-page-title a{
+.first-page-title a {
     color: rgb(241, 234, 241);
     text-decoration: none;
     background-color: rgba(140, 12, 155, 0.884);
@@ -40,26 +40,15 @@
     border-radius: 10px;
 }
 
-.front-page-title a:hover {
+.first-page-title a:hover {
     background-color: rgb(165, 50, 155);
 }
 
-.container .logo {
-    width: 80px;
-    margin-inline: auto;
-}
-
-@media (max-width: 992px) {
-    .container {
-        width: 90%;
-    }
-}
-
-.navbar {
+/* second page */
+.background {
     padding: 30px;
     background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
     width: 100%;
-    min-height: 100vh;
     min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
