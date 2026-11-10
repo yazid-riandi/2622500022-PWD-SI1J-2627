@@ -1,247 +1,188 @@
-        * {
-            box-sizing: border-box;
-        }
 
-        body {
-            margin: 0;
-            padding: 12px;
-            font-family: Arial, sans-serif;
-            color: #111827;
-            background-color: #eef2f7;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        /* Header */
-        header {
-            background-color: #003366;
-            color: #ffffff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border: 1px solid #00264d;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dceeff, #edf3ff);
+    min-height: 100vh;
+    padding: 40px 15px;
+    color: #24344d;
+}
 
-        header h1 {
-            margin: 0;
-            font-size: 28px;
-        }
+.container {
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 10px 35px rgba(25,55,100,0.12);
+}
 
-        .header-top {
-             display: flex;
-             justify-content: space-between;
-            align-items: center;
-        }
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-        #navMenu {
-            display: none;
-        }
+.icon {
+    width: 65px;
+    height: 65px;
+    background: #e5efff;
+    color: #0755a5;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto auto 15px;
+}
 
-        #navMenu.nav-open {
-            display: flex;
-            flex-direction: column;
-            margin-top: 16px;
-        }
+.header h1 {
+    color: #123d70;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
 
-        .nav-toggle {
-            display: block;
-            border: none;
-            background: transparent;
-            color: #ffffff;
-            font-size: 1.8rem;
-            line-height: 1;
-            cursor: pointer;
-        }
+.header p {
+    color: #8290a4;
+}
 
-        /* Navigasi */
-        nav ul {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 8px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+.form-group {
+    margin-bottom: 20px;
+}
 
-        nav a {
-            color: #ffffff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        
-        /* Layout utama*/
-        main {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 16px;
-        }
+.form-group > label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 9px;
+}
 
-        section {
-            width: 100%;
-        }
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d5dfeb;
+    border-radius: 9px;
+    font-size: 14px;
+    outline: none;
+}
 
-        #home {
-            background-color: #ffffff;
-            border: 1px solid #d0d7de;
-            padding: 20px;
-            margin: 0;
-        }
+input:focus, select:focus, textarea:focus {
+    border-color: #2878d0;
+    box-shadow: 0 0 0 3px #2878d022;
+}
 
-        /* Bagian Home  */
-        #home h2 {
-            color: #003366;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 6px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
+textarea {
+    height: 120px;
+    resize: vertical;
+}
 
-        #home p {
-            line-height: 1.6;
-            margin: 0 0 16px;
-        }
+.option {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
 
-        #home img {
-            display: block;
-            width: 240px;
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #cbd5e1;
-        }
+.option label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
 
-        /* Bagian About */
-        #about {
-            background-color: #ffffff;
-            border: 1px solid #d0d7de;
-            padding: 20px;
-            margin: 0;
-        }
+.option input {
+    accent-color: #1769b2;
+}
 
-        #about h2 {
-            color: #003366;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 6px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 25px;
+}
 
-        #about h3 {
-            color: #1f4e78;
-            margin-bottom: 6px;
-        }
+button {
+    padding: 13px 24px;
+    background: #0755a5;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-        #about p {
-            margin: 6px 0;
-            padding: 6px 0;
-            border-bottom: 1px solid #e6e6e6;
-            line-height: 1.5;
-        }
+button:hover {
+    background: #003d7d;
+}
 
-        #about ol {
-            color: #333333;
-            margin: 8px 0;
-            padding: 8px 24px;
-            border: 1px solid #e6e6e6;
-        }
+.reset {
+    background: #e9eef5;
+    color: #34445c;
+}
 
-        /* Bagian Contact */
-        #contact {
-            background-color: #f8fafc;
-            border: 1px solid #cbd5e1;
-            padding: 20px;
-            margin: 0;
-        }
+.hasil {
+    margin-top: 35px;
+    padding: 25px;
+    background: #f7faff;
+    border: 1px solid #dce7f5;
+    border-radius: 12px;
+}
 
-        #contact h2 {
-            color: #003366;
-            border-bottom: 2px solid #003366;
-            padding-bottom: 6px;
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
+.hasil h2 {
+    color: #0755a5;
+    margin-bottom: 20px;
+}
 
-        .form-group {
-            margin: 12px 0;
-        }
+.hasil-item {
+    margin-bottom: 17px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
 
-        #contact label {
-            color: #1f2937;
-            font-weight:bold;
-        }
+.success-label {
+    background: #e2f7e9;
+    color: #19713a;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+}
 
-        .input-form {
-            width: 100%;
-            max-width: 100%;
-            background-color: #ffffff;
-            color: #111827;
-            font-family: Arial, sans-serif;
-            font-size: 16px;
-            padding: 8px;
-            margin: 4px 0;
-            border: 1px solid #94a3b8;
-        }
+.footer {
+    text-align: center;
+    color: #9aa7b8;
+    font-size: 12px;
+    margin-top: 30px;
+}
 
-        #contact textarea {
-            min-height: 80px;
-            resize: vertical;
-        }
+.alert {
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 9px;
+}
 
-        #contact button {
-            background-color: #003366;
-            color: #ffffff;
-            font-weight: bold;
-            padding: 8px 14px;
-            margin: 8px 6px 0 0;
-            border: 1px solid #003366;
-            cursor: pointer;
-        }
+.success {
+    background: #e2f7e9;
+    color: #19713a;
+}
 
-        /* Footer */
-        footer {
-            background-color: #003366;
-            color: #ffffff;
-            text-align: center;
-            padding: 14px 20px;
-            margin-top: 20px;
-            border: 1px solid #00264d;
-        }
-        footer p {
-            margin: 0;
-        }
+.error {
+    background: #ffe8e8;
+    color: #b42323;
+}
 
-        .form-feedback-error {
-            color: #c62828;
-        }
+@media (max-width: 500px) {
+    .container {
+        padding: 23px 18px;
+    }
 
-        .form-feedback-success {
-            color: #2e7d32;
-        }
-
-        /* Layout untuk viewport yang lebih lebar */
-       @media (min-width: 768px) {
-        nav {
-            margin-top: 16px;
-        }
-
-        nav ul {
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-            gap: 16px;
-        }
-        
-        main {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        #contact {
-            grid-column: 1 / -1;
-        }
-
-        #navMenu {
-            display: flex;
-            flex-direction: row;
-        }
-        .nav-toggle {
-            display: none;
-        }
-       }
+    .buttons {
+        flex-direction: column;
+    }
+}
