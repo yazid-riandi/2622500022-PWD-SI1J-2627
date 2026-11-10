@@ -33,14 +33,14 @@
         <div class="content">
                 <div class="card">
                     <h2>BERANDA</h2>
-                    <p>Perkenalkan, nama saya Yazid Riandi, dengan Nomor Induk Mahasiswa (NIM) 2622500022. Saya merupakan mahasiswa Program Studi Sistem Informasi. Saya lahir di Pangkal Pinang pada tanggal 3 Mei 2007. Saya memiliki semangat untuk terus belajar, mengembangkan kemampuan, serta menambah wawasan, khususnya di bidang teknologi informasi. Saya berharap melalui perkuliahan ini dapat memperoleh ilmu dan pengalaman baru, meningkatkan keterampilan, serta menjadi pribadi yang lebih baik dan mampu meraih cita-cita di masa depan./p>
+                    <p>Perkenalkan, nama saya Yazid Riandi, dengan Nomor Induk Mahasiswa (NIM) 2622500022. Saya merupakan mahasiswa Program Studi Sistem Informasi. Saya lahir di Pangkal Pinang pada tanggal 3 Mei 2007. Saya memiliki semangat untuk terus belajar, mengembangkan kemampuan, serta menambah wawasan, khususnya di bidang teknologi informasi. Saya berharap melalui perkuliahan ini dapat memperoleh ilmu dan pengalaman baru, meningkatkan keterampilan, serta menjadi pribadi yang lebih baik dan mampu meraih cita-cita di masa depan. </p>
                 </div>
             </div>
   </section>
   <section id="register">
     <div class="card">
                     <h2>PROFILE</h2>
-                    <p>Perkenalkan, nama saya Yazid Riandi, dengan Nomor Induk Mahasiswa (NIM) 2622500022. Saya merupakan mahasiswa Program Studi Sistem Informasi. Saya lahir di Pangkal Pinang pada tanggal 3 Mei 2007. Saya memiliki semangat untuk terus belajar, mengembangkan kemampuan, serta menambah wawasan, khususnya di bidang teknologi informasi. Saya berharap melalui perkuliahan ini dapat memperoleh ilmu dan pengalaman baru, meningkatkan keterampilan, serta menjadi pribadi yang lebih baik dan mampu meraih cita-cita di masa depan./p>
+                    <p>Perkenalkan, nama saya Yazid Riandi, dengan Nomor Induk Mahasiswa (NIM) 2622500022. Saya merupakan mahasiswa Program Studi Sistem Informasi. Saya lahir di Pangkal Pinang pada tanggal 3 Mei 2007. Saya memiliki semangat untuk terus belajar, mengembangkan kemampuan, serta menambah wawasan, khususnya di bidang teknologi informasi. Saya berharap melalui perkuliahan ini dapat memperoleh ilmu dan pengalaman baru, meningkatkan keterampilan, serta menjadi pribadi yang lebih baik dan mampu meraih cita-cita di masa depan. </p>
                 </div>
             </div>           
                 </div>
