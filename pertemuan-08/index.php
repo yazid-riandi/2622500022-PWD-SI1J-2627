@@ -47,4 +47,39 @@
             </div>
         
 </body>
+
+<footer class="site-footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2>FORM<span> KONTAK.</span></h2>
+            <p>
+                Website formulir kontak untuk menyampaikan
+                pertanyaan, saran, dan informasi.
+            </p>
+        </div>
+
+        <div class="footer-info">
+            <h3>Informasi</h3>
+            <p>Beranda</p>
+            <p>Form Kontak</p>
+            <p>Program Studi</p>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Hubungi Kami</h3>
+            <p>Email: admin@email.com</p>
+            <p>Website: Form Kontak</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Form Kontak. All Rights Reserved.</p>
+        <p>Dibuat dengan ♥ menggunakan PHP & CSS</p>
+    </div>
+
+</footer>
+
 </html>

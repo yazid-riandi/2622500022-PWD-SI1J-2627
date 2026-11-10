@@ -24,5 +24,18 @@
         "program": "Teknik Informatika",
         "pesan": "sds",
         "waktu_daftar": "2026-11-10 13:09:03"
+    },
+    {
+        "nama": "yazid riandi",
+        "email": "262250022@mahasiswa.atmaluhur.ac.id",
+        "semester": "1",
+        "tanggal": "2007-05-03",
+        "jenis": "Pertanyaan",
+        "topik": [
+            "HTML"
+        ],
+        "program": "Teknik Informatika",
+        "pesan": "sds",
+        "waktu_daftar": "2026-11-10 13:09:57"
     }
 ]
